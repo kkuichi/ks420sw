@@ -8,9 +8,6 @@ Modely boli trénované na dátach z kanála AIA 1600 Å, získaných observató
 ## Štruktúra projektu
 ```
 .
-├── cnn/                                         
-│   ├── ...                      - všetky uložené modely
-│
 ├── csv's/                       - Zdrojové súbory slúžiace na sťahovanie snímok slnečnej koróny
 │   ├── flares.csv               - Pôvodný dataset obsahujúci informácie o dátach typu flares, Zdroj: [Bobra Flares] (https://github.com/mbobra/mapping-solar-flares)
 │   ├── flares2.csv              - Kópia flares.csv, upravené hodnoty latitude a longitude podľa prepočtov
@@ -50,7 +47,7 @@ Modely boli trénované na dátach z kanála AIA 1600 Å, získaných observató
 | SunPy        | 6.0.3  | Manipulácia s astronomickými obrázkami z observatórií.    |
 | hvpy         | 1.1.0  | Sťahovanie slnečných snímok z Helioviewera.               |
 | aiapy        | 0.7.4  | Kalibrácia slnečných obrázkov.                            |
-| Pillow (PIL) | 9.2.0  | Práca s obrázkami.                                        |
+| Pillow       | 9.2.0  | Práca s obrázkami.                                        |
 | SciPy        | 1.9.3  | Špeciálne matematické funkcie.                            |
 
 
