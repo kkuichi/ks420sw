@@ -1,12 +1,11 @@
-### **Predikcia sily slnečných erupcií zo snímok slnečnej koróny**
-Bakalárska práca
-Kristína Šimčíková
-# Popis
-Tento repozitár obsahuje praktickú časť bakalárskej práce, cieľom ktorej bolo navrhnúť a implementovať vhodné modely strojového učenia na predikciu sily slnčených erupcií, na základne obrazových dát slnečnej koróny.
+# **Predikcia sily slnečných erupcií zo snímok slnečnej koróny**
 
-Modely boli trénované na dátach v kanáli AIA 1600 Å, ktoré poskytuje Solar Dynamics Observatory (SDO), na základe infromácií zo súborov ribbondb_v1.0.csv a flares3.csv.
+## Popis
+Tento repozitár obsahuje praktickú časť bakalárskej práce, cieľom ktorej bolo navrhnúť a implementovať vhodné modely strojového učenia na predikciu sily slnčených erupcií na základne obrazových dát slnečnej koróny.
 
-# Štruktúra projektu
+Modely boli trénované na dátach z kanála AIA 1600 Å, získaných observatóriom Solar Dynamics Observatory (SDO), pričom ako zdroj informácií slúžili súbory ribbondb_v1.0.csv a flares3.csv.
+
+## Štruktúra projektu
 ```
 .
 ├── cnn/                                         
@@ -33,12 +32,10 @@ Modely boli trénované na dátach v kanáli AIA 1600 Å, ktoré poskytuje Solar
 ├── README.md                    - Aktuálny súbor s popisom projektu
 
 ```
-# Priečinky s obrázkami dostupné 
-- data2                   - Obr. typu flares roztriedené v priečinkoch C, M a X (5 pred + PEAK + 5 po -> 11 obrázkov pre každú udalosť)
-- experimentFlares1       - Obr. typu flares roztriedené v train, test a valid (PEAK -> 1 obrázok pre každú udalosť)
-- experimentFlaresRibbons - Kombinované obr. typu flares a ribbons roztriedené v train, test a valid (5 pred + PEAK + 5 po -> 11 obrázkov pre každú udalosť)
-- flares                  - Obr. typu flares roztriedené v train, test a valid (5 pred + PEAK + 5 po -> 11 obrázkov pre každú udalosť)
-- ribbons                 - Obr. typu ribbons roztriedené v train, test a valid + v priečinkoch C, M a X (segmented) (5 pred + PEAK + 5 po -> 11 obrázkov pre každú udalosť)
+## Priečinky s obrázkami
+- experimentFlaresRibbons - Kombinované obr. typu flares a ribbons (5 pred + PEAK + 5 po -> 11 obrázkov pre každú udalosť)
+- flares                  - Obr. typu flares (5 pred + PEAK + 5 po -> 11 obrázkov pre každú udalosť)
+- ribbons                 - Obr. typu ribbons (5 pred + PEAK + 5 po -> 11 obrázkov pre každú udalosť)
 
 # Použité knižnice v programovacom jazyku Python
 | Knižnica     | Verzia | Popis                                                     |
@@ -55,6 +52,7 @@ Modely boli trénované na dátach v kanáli AIA 1600 Å, ktoré poskytuje Solar
 | aiapy        | 0.7.4  | Kalibrácia slnečných obrázkov.                            |
 | Pillow (PIL) | 9.2.0  | Práca s obrázkami.                                        |
 | SciPy        | 1.9.3  | Špeciálne matematické funkcie.                            |
+
 
 Tento projekt bol realizovaný ako súčasť bakalárskej práce na Technickej Univerzite v Košiciach.
 
