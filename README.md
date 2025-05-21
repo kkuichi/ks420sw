@@ -15,11 +15,11 @@ Modely boli trénované na dátach z kanála AIA 1600 Å, získaných observató
 │
 ├── notebooks/                 
 │   ├── ...                        
-│   ├── Experiment1              - Architektúra a výsledky modelov z Experimentu 1.
-│   ├── Experiment2              - Architektúra a výsledky modelov z Experimentu 2.
-│   ├── Experiment3              - Architektúra a výsledky modelov z Experimentu 3.
-│   ├── Experiment4              - Architektúra a výsledky modelov z Experimentu 4.
-│   ├── Experiment5              - Architektúra a výsledky modelov z Experimentu 5.
+│   ├── Experiment1              - Modely z Experimentu 1.
+│   ├── Experiment2              - Modely z Experimentu 2.
+│   ├── Experiment3              - Modely z Experimentu 3.
+│   ├── Experiment4              - Modely z Experimentu 4.
+│   ├── Experiment5              - Modely z Experimentu 5.
 │   ├── flares_stahovanie        - Sťahovanie obrázkov typu flares, rozdeľovanie do train, test a valid.
 │   ├── priprava_dat_ribbondb    - Príprava a analýza dát typu ribbons.
 │   ├── ribbons_stahovanie       - Sťahovanie obrázkov typu ribbons.
@@ -29,10 +29,11 @@ Modely boli trénované na dátach z kanála AIA 1600 Å, získaných observató
 
 ```
 ## Priečinky s obrázkami
-- experimentFlaresRibbons - Kombinované obrázky typu flares a ribbons 
-- flares                  - Obrázky typu flares 
-- ribbons                 - Obrázky typu ribbons 
-
+```
+> experimentFlaresRibbons        - Kombinované obrázky typu flares a ribbons 
+> flares                         - Obrázky typu flares 
+> ribbons                        - Obrázky typu ribbons 
+```
 ## Použité knižnice v programovacom jazyku Python
 | Knižnica     | Verzia | Popis                                                     |
 |--------------|--------|-----------------------------------------------------------|
