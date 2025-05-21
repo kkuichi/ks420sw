@@ -7,25 +7,35 @@ Modely boli trénované na dátach z kanála AIA 1600 Å, získaných observató
 ## Štruktúra projektu
 ```
 .
-├── csv's/                       - Zdrojové súbory slúžiace na sťahovanie snímok slnečnej koróny.
-│   ├── flares.csv               - Pôvodný dataset obsahujúci informácie o dátach typu flares.
-│   ├── flares2.csv              - Kópia flares.csv, upravené hodnoty latitude a longitude podľa prepočtov.
-│   ├── flares3.csv              - Kópia flares.csv, zamenené názvy stĺpcov latitude a longitude (konečný dataset, slúžil na sťahovanie obrázkov).
-│   └── ribbondb_v1.0.csv        - Pôvodný dataset obsahujúci informácie o dátach rypu ribbons.
+├── cnn/                                          - Natrénované modely (pre účely nasadenia/testovania).
+│   ├── ... 
+│   ├── flares_cnn_model4.h5                      - Uložený model z Experimentu 2
+│   ├── flares_ribbons_cnn_model4.h5              - Uložený model z Experimentu 3
+│   ├── flares_ribbons_model_resnet50.h5          - Uložený model z Experimentu 4
+│   ├── ribbons_cnn_resnet_sigmoid_thresholds.h5  - Uložený model z Experimentu 5
+│   ├── solar_flare_cnn_model9b.h5                - Uložený model z Experimentu 1 (s kategoriálnou krížovou entropiou)
+│   └── solar_flare_cnn_model9.h5                 - Uložený model z Experimentu 1 (s focal loss)
+│
+├── csv's/                                        - Zdrojové súbory slúžiace na sťahovanie snímok slnečnej koróny.
+│   ├── ... 
+│   ├── flares.csv                                - Pôvodný dataset obsahujúci informácie o dátach typu flares.
+│   ├── flares2.csv                               - Kópia flares.csv, upravené hodnoty latitude a longitude podľa prepočtov.
+│   ├── flares3.csv                               - Kópia flares.csv, zamenené názvy stĺpcov latitude a longitude (slúžil na sťahovanie obrázkov).
+│   └── ribbondb_v1.0.csv                         - Pôvodný dataset obsahujúci informácie o dátach rypu ribbons.
 │
 ├── notebooks/                 
 │   ├── ...                        
-│   ├── Experiment1              - Modely z Experimentu 1.
-│   ├── Experiment2              - Modely z Experimentu 2.
-│   ├── Experiment3              - Modely z Experimentu 3.
-│   ├── Experiment4              - Modely z Experimentu 4.
-│   ├── Experiment5              - Modely z Experimentu 5.
-│   ├── flares_stahovanie        - Sťahovanie obrázkov typu flares, rozdeľovanie do train, test a valid.
-│   ├── priprava_dat_ribbondb    - Príprava a analýza dát typu ribbons.
-│   ├── ribbons_stahovanie       - Sťahovanie obrázkov typu ribbons.
-│   └── ribbons_train_test       - Rozdeľovanie obrázkov typu ribbons do train, test a valid.
+│   ├── Experiment1                               - Modely z Experimentu 1.
+│   ├── Experiment2                               - Modely z Experimentu 2.
+│   ├── Experiment3                               - Modely z Experimentu 3.
+│   ├── Experiment4                               - Modely z Experimentu 4.
+│   ├── Experiment5                               - Modely z Experimentu 5.
+│   ├── flares_stahovanie                         - Sťahovanie obrázkov typu flares, rozdeľovanie do train, test a valid.
+│   ├── priprava_dat_ribbondb                     - Príprava a analýza dát typu ribbons.
+│   ├── ribbons_stahovanie                        - Sťahovanie obrázkov typu ribbons.
+│   └── ribbons_train_test                        - Rozdeľovanie obrázkov typu ribbons do train, test a valid.
 │
-├── README.md                    - Aktuálny súbor s popisom projektu.
+├── README.md                                     - Aktuálny súbor s popisom projektu.
 
 ```
 ## Priečinky s obrázkami
