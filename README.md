@@ -8,25 +8,25 @@ Modely boli trénované na dátach z kanála AIA 1600 Å, získaných observató
 ## Štruktúra projektu
 ```
 .
-├── csv's/                       - Zdrojové súbory slúžiace na sťahovanie snímok slnečnej koróny
-│   ├── flares.csv               - Pôvodný dataset obsahujúci informácie o dátach typu flares, Zdroj: [Bobra Flares] (https://github.com/mbobra/mapping-solar-flares)
-│   ├── flares2.csv              - Kópia flares.csv, upravené hodnoty latitude a longitude podľa prepočtov
-│   ├── flares3.csv              - Kópia flares.csv, zamenené názvy stĺpcov latitude a longitude (konečný dataset, slúžil na sťahovanie obrázkov)
-│   └── ribbondb_v1.0.csv        - Pôvodný dataset obsahujúci informácie o dátach rypu ribbons, Zdroj: [Kazachenko RibbonDB (https://solarmuri.ssl.berkeley.edu/~kazachenko/RibbonDB/)
+├── csv's/                       - Zdrojové súbory slúžiace na sťahovanie snímok slnečnej koróny.
+│   ├── flares.csv               - Pôvodný dataset obsahujúci informácie o dátach typu flares, Zdroj: [Bobra Flares](https://github.com/mbobra/mapping-solar-flares).
+│   ├── flares2.csv              - Kópia flares.csv, upravené hodnoty latitude a longitude podľa prepočtov.
+│   ├── flares3.csv              - Kópia flares.csv, zamenené názvy stĺpcov latitude a longitude (konečný dataset, slúžil na sťahovanie obrázkov).
+│   └── ribbondb_v1.0.csv        - Pôvodný dataset obsahujúci informácie o dátach rypu ribbons, Zdroj: [Kazachenko RibbonDB](https://solarmuri.ssl.berkeley.edu/~kazachenko/RibbonDB/).
 │
 ├── notebooks/                 
 │   ├── ...                        
-│   ├── Experiment1              - Architektúra a výsledky modelov z Experimentu 1 (jednoduchá CNN, multi-class, dáta = ribbons)
-│   ├── Experiment2              - Architektúra a výsledky modelov z Experimentu 2 (jednoduchá CNN, multi-class, dáta = flares)
-│   ├── Experiment3              - Architektúra a výsledky modelov z Experimentu 3 (CNN s VGG16, multi-class, dáta = ribbons + flares)
-│   ├── Experiment4              - Architektúra a výsledky modelov z Experimentu 4 (CNN s ResNet50, multi-class, dáta = ribbons + flares)
-│   ├── Experiment5              - Architektúra a výsledky modelov z Experimentu 5 (CNN s ResNet50, multi-label, dáta = ribbons + flares)
-│   ├── flares_stahovanie        - Sťahovanie obrázkov typu flares, rozdeľovanie do trénovacej, testovacej a validačnej množiny
-│   ├── priprava_dat_ribbondb    - Príprava a analýza dát typu ribbons
-│   ├── ribbons_stahovanie       - Sťahovanie obrázkov typu ribbons
-│   └── ribbons_train_test       - Rozdeľovanie obrázkov typu ribbons do trénovacej, testovacej a validačnej množiny
+│   ├── Experiment1              - Architektúra a výsledky modelov z Experimentu 1.
+│   ├── Experiment2              - Architektúra a výsledky modelov z Experimentu 2.
+│   ├── Experiment3              - Architektúra a výsledky modelov z Experimentu 3.
+│   ├── Experiment4              - Architektúra a výsledky modelov z Experimentu 4.
+│   ├── Experiment5              - Architektúra a výsledky modelov z Experimentu 5.
+│   ├── flares_stahovanie        - Sťahovanie obrázkov typu flares, rozdeľovanie do train, test a valid.
+│   ├── priprava_dat_ribbondb    - Príprava a analýza dát typu ribbons.
+│   ├── ribbons_stahovanie       - Sťahovanie obrázkov typu ribbons.
+│   └── ribbons_train_test       - Rozdeľovanie obrázkov typu ribbons do train, test a valid.
 │
-├── README.md                    - Aktuálny súbor s popisom projektu
+├── README.md                    - Aktuálny súbor s popisom projektu.
 
 ```
 ## Priečinky s obrázkami
