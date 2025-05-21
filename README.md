@@ -3,16 +3,16 @@
 ## Popis
 Tento repozitár obsahuje praktickú časť bakalárskej práce, cieľom ktorej bolo navrhnúť a implementovať vhodné modely strojového učenia na predikciu sily slnčených erupcií na základne obrazových dát slnečnej koróny.
 
-Modely boli trénované na dátach z kanála AIA 1600 Å, získaných observatóriom Solar Dynamics Observatory (SDO), pričom ako zdroj informácií slúžili súbory ribbondb_v1.0.csv a flares3.csv.
+Modely boli trénované na dátach z kanála AIA 1600 Å, získaných observatóriom Solar Dynamics Observatory (SDO), pričom ako zdroj informácií slúžili súbory **ribbondb_v1.0.csv** (zdroj: [Kazachenko RibbonDB](https://solarmuri.ssl.berkeley.edu/~kazachenko/RibbonDB/)) a **flares.csv** (zdroj: [Bobra Flares](https://github.com/mbobra/mapping-solar-flares)).
 
 ## Štruktúra projektu
 ```
 .
 ├── csv's/                       - Zdrojové súbory slúžiace na sťahovanie snímok slnečnej koróny.
-│   ├── flares.csv               - Pôvodný dataset obsahujúci informácie o dátach typu flares, Zdroj: [Bobra Flares](https://github.com/mbobra/mapping-solar-flares).
+│   ├── flares.csv               - Pôvodný dataset obsahujúci informácie o dátach typu flares.
 │   ├── flares2.csv              - Kópia flares.csv, upravené hodnoty latitude a longitude podľa prepočtov.
 │   ├── flares3.csv              - Kópia flares.csv, zamenené názvy stĺpcov latitude a longitude (konečný dataset, slúžil na sťahovanie obrázkov).
-│   └── ribbondb_v1.0.csv        - Pôvodný dataset obsahujúci informácie o dátach rypu ribbons, Zdroj: [Kazachenko RibbonDB](https://solarmuri.ssl.berkeley.edu/~kazachenko/RibbonDB/).
+│   └── ribbondb_v1.0.csv        - Pôvodný dataset obsahujúci informácie o dátach rypu ribbons.
 │
 ├── notebooks/                 
 │   ├── ...                        
