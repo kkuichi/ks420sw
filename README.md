@@ -1,9 +1,8 @@
 # **Predikcia sily slnečných erupcií zo snímok slnečnej koróny**
 
-## Popis
 Tento repozitár obsahuje praktickú časť bakalárskej práce, cieľom ktorej bolo navrhnúť a implementovať vhodné modely strojového učenia na predikciu sily slnčených erupcií na základne obrazových dát slnečnej koróny.
 
-Modely boli trénované na dátach z kanála AIA 1600 Å, získaných observatóriom Solar Dynamics Observatory (SDO), pričom ako zdroj informácií slúžili súbory **ribbondb_v1.0.csv** (zdroj: [Kazachenko RibbonDB](https://solarmuri.ssl.berkeley.edu/~kazachenko/RibbonDB/)) a **flares.csv** (zdroj: [Bobra Flares](https://github.com/mbobra/mapping-solar-flares)).
+Modely boli trénované na dátach z kanála AIA 1600 Å, získaných observatóriom Solar Dynamics Observatory (SDO), pričom ako zdroj informácií slúžili súbory **ribbondb_v1.0.csv** (zdroj: [Kazachenko](https://solarmuri.ssl.berkeley.edu/~kazachenko/RibbonDB/)) a **flares.csv** (zdroj: [Bobra](https://github.com/mbobra/mapping-solar-flares)).
 
 ## Štruktúra projektu
 ```
@@ -30,9 +29,9 @@ Modely boli trénované na dátach z kanála AIA 1600 Å, získaných observató
 
 ```
 ## Priečinky s obrázkami
-- experimentFlaresRibbons - Kombinované obr. typu flares a ribbons (5 pred + PEAK + 5 po -> 11 obrázkov pre každú udalosť)
-- flares                  - Obr. typu flares (5 pred + PEAK + 5 po -> 11 obrázkov pre každú udalosť)
-- ribbons                 - Obr. typu ribbons (5 pred + PEAK + 5 po -> 11 obrázkov pre každú udalosť)
+- experimentFlaresRibbons - Kombinované obrázky typu flares a ribbons 
+- flares                  - Obrázky typu flares 
+- ribbons                 - Obrázky typu ribbons 
 
 # Použité knižnice v programovacom jazyku Python
 | Knižnica     | Verzia | Popis                                                     |
