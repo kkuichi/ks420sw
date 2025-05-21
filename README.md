@@ -33,7 +33,7 @@ Modely boli trénované na dátach z kanála AIA 1600 Å, získaných observató
 - flares                  - Obrázky typu flares 
 - ribbons                 - Obrázky typu ribbons 
 
-# Použité knižnice v programovacom jazyku Python
+## Použité knižnice v programovacom jazyku Python
 | Knižnica     | Verzia | Popis                                                     |
 |--------------|--------|-----------------------------------------------------------|
 | TensorFlow   | 2.19.0 | Trénovanie a vytváranie CNN modelov.                      |
