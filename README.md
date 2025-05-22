@@ -7,15 +7,6 @@ Modely boli trénované na dátach z kanála AIA 1600 Å, získaných observató
 ## Štruktúra projektu
 ```
 .
-├── cnn/                                          - Natrénované modely (pre účely nasadenia/testovania).
-│   ├── ... 
-│   ├── flares_cnn_model4.h5                      - Uložený model z Experimentu 2
-│   ├── flares_ribbons_cnn_model4.h5              - Uložený model z Experimentu 3
-│   ├── flares_ribbons_model_resnet50.h5          - Uložený model z Experimentu 4
-│   ├── ribbons_cnn_resnet_sigmoid_thresholds.h5  - Uložený model z Experimentu 5
-│   ├── solar_flare_cnn_model9b.h5                - Uložený model z Experimentu 1 (s kategoriálnou krížovou entropiou)
-│   └── solar_flare_cnn_model9.h5                 - Uložený model z Experimentu 1 (s focal loss)
-│
 ├── csv's/                                        - Zdrojové súbory slúžiace na sťahovanie snímok slnečnej koróny.
 │   ├── ... 
 │   ├── flares.csv                                - Pôvodný dataset obsahujúci informácie o dátach typu flares.
